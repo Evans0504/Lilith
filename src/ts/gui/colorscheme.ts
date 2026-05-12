@@ -47,6 +47,18 @@ const colorShemes = {
         darkbutton: "#2e2e2e",
         type:'dark'
     },
+    "lilith-dark": {
+        bgcolor: "#0A0810",
+        darkbg: "#14121C",
+        borderc: "#00D9FF",
+        selected: "#FF3B5C",
+        draculared: "#FF3B5C",
+        textcolor: "#F5F5F5",
+        textcolor2: "#8B8B9A",
+        darkBorderc: "#1C1828",
+        darkbutton: "#1C1828",
+        type: 'dark'
+    },  
     "light": {
         bgcolor: "#ffffff",
         darkbg: "#f0f0f0",
