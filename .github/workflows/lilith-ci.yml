@@ -3,7 +3,10 @@ name: Lilith - CI (lint + tests)
 on:
   pull_request:
     branches: [main]
-
+    
+permissions:
+  contents: read
+  
 jobs:
   ci:
     runs-on: ubuntu-latest
