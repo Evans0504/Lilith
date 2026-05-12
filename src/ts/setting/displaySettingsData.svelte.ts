@@ -25,6 +25,7 @@ export const displayThemeSettingsItems: SettingItem[] = [
                 { value: 'mobilechat', label: 'Mobile Chat' },
                 { value: 'cardboard', label: 'CardBoard' },
                 { value: 'customHTML', label: 'Custom HTML' },
+                { value: 'lilith', label: 'Lilith' },
             ],
         },
         keywords: ['theme', 'gui', 'layout'],
