@@ -65,6 +65,21 @@
             {/if}
         {/if}
     </div>
+{:else if DBState.db.theme === 'lilith'}
+    <div class="grow h-full flex relative" style={bgImg.length < 4 ? wallPaper : bgImg}>
+        <SideBarArrow />
+        <BackgroundDom />
+        <div class="h-full w-[100px] flex-shrink-0 bg-darkbg border-r border-darkborderc flex items-center justify-center">
+            <span class="text-textcolor2 text-xs">Lilith</span>
+        </div>
+        <div class="grow h-full">
+            <DefaultChatScreen 
+                customStyle={`backdrop-filter: blur(8px);`} 
+                bind:openChatList 
+                bind:openModuleList
+            />
+        </div>
+    </div>
 {:else}
     <div class="grow h-full min-w-0 relative justify-center flex">
         <SideBarArrow />
