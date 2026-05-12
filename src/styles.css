@@ -2,7 +2,33 @@
 
 @plugin '@tailwindcss/typography';
 
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+code, pre, kbd, samp {
+  font-family: 'Geist Mono', 'SF Mono', Consolas, monospace;
+}
+
 @theme {
+  --font-sans: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Geist Mono', 'SF Mono', Consolas, monospace;
   --color-bgcolor: var(--risu-theme-bgcolor);
   --color-darkbg: var(--risu-theme-darkbg);
   --color-borderc: var(--risu-theme-borderc);
