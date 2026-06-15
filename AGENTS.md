@@ -276,6 +276,7 @@ Outillage Claude Code installé au niveau machine (global, hors de ce repo). Ré
 🔌 **MCP** :
 - 🧠 `sage` : MCP fourni par le plugin sage (pré-existant ; non listé dans `~/.claude.json`).
 - 🎭 `playwright` : `@playwright/mcp` officiel, scope user, navigateur = Chrome système (`--browser chrome`). Déclaré dans `~/.claude.json`. Sous Windows : node-direct sur `cli.js` (pas `npx`), contourne le bug stdio #1540.
+- 🪄 `magic` : `@21st-dev/magic` (21st.dev), génération de composants UI. Scope user, déclaré dans `~/.claude.json`. Sous Windows : node-direct sur `dist/index.js` (pas `npx`), clé fournie via `API_KEY`.
 
 💻 **Conventions machine (Windows)** :
 - 🐍 `python3` = stub Microsoft Store cassé, utiliser `python`/`py`.
