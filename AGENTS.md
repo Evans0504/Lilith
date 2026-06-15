@@ -258,3 +258,25 @@ Language files are located in `/src/lang/`.
 2. Run `pnpm check` before submitting a pull request
 3. Ensure your code is well-tested
 4. Format code with Prettier before committing
+
+## Outillage global Claude Code
+
+Outillage Claude Code installé au niveau machine (global, hors de ce repo). Référence pour les agents travaillant sur Lilith.
+
+🧰 **Skills globaux** (`~/.claude/skills/`) :
+- 🏗️ `atomic-sprint-with-mentor` : workflow sprint atomique (pré-existant).
+- 🧱 `bootstrap-resilient-stack` : bootstrap stack résiliente (pré-existant).
+- ✨ `impeccable` : qualité design / anti-patterns. Hook automatique global (PostToolUse `Edit|Write|MultiEdit`, dans `~/.claude/settings.json`). Contexte projet via `/impeccable init` (génère `PRODUCT.md` + `DESIGN.md`). Pas encore lancé sur Lilith.
+- 🎨 `ui-ux-pro-max` : design intelligence (styles, palettes, pairings de fonts, guidelines UX).
+- 👌 `design-taste-frontend` : taste frontend anti-slop, basé métriques.
+- 🖼️ `huashu-design` : livrables design HTML (prototypes, slides, infographies, exports MP4/GIF, PPTX). Deps activées : npm (PDF/PPTX), ffmpeg, Playwright (verify). Wrappers `.sh` via Git Bash/WSL.
+- 🔧 `emil-design-eng` : design engineering d'Emil Kowalski (polish, micro-interactions, anims sous 300ms). À la demande, hors hook.
+- 🌀 `design-motion-principles` : motion design (Emil + Jakub Krehel + Jhey Tompkins), modes build/audit, rapport HTML auto-suffisant. À la demande, hors hook.
+
+🔌 **MCP** :
+- 🧠 `sage` : MCP fourni par le plugin sage (pré-existant ; non listé dans `~/.claude.json`).
+- 🎭 `playwright` : `@playwright/mcp` officiel, scope user, navigateur = Chrome système (`--browser chrome`). Déclaré dans `~/.claude.json`. Sous Windows : node-direct sur `cli.js` (pas `npx`), contourne le bug stdio #1540.
+
+💻 **Conventions machine (Windows)** :
+- 🐍 `python3` = stub Microsoft Store cassé, utiliser `python`/`py`.
+- 🔌 MCP : enregistrer en node-direct sur le `cli.js`, jamais via `npx`/`cmd`.
